@@ -9,13 +9,12 @@ Neste projeto utilizei o `Webpack` para melhor organização dos arquivos e past
 <br>
 
 ## Instalação:
----
+
 Basta clonar o repositório, abrir o terminal, e com o `yarn`, digitar `yarn dev` ou `yarn webpack-dev-server --mode=development`. Este por padrão rodará no `localhost:8080`, mas caso não seja possível, será exibido no terminal a porta alternativa que estará rodando. Basta abrir o navegador no `localhost` e na porta exibida e alí estará rodando o projeto.
 
 <br>
 
 ## Organização de pastas e arquivos:
-___
 
 Na raiz do projeto temos o arquivo `webpack.config.js` e o `.babelrc`. Com os dois juntos nós temos uma melhor organização de pastas e maior suporte a navegadores mais antigos. O `webpack` identifica o arquivo `main.js` que está na pasta `src` que foi escrito em JavaScript como o arquivo de entrada, e, através do `Babel`, é transformado em um arquivo chamado `bundle.js`, que é colocado dentro da pasta `public`. Este arquivo `bundle.js` que será o arquivo chamado no HTML.
 
