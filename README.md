@@ -8,13 +8,11 @@ Neste projeto utilizei o `Webpack` para melhor organização dos arquivos e past
 
 <br>
 
-
 ## Instalação:
 ---
-Basta clonar o repositório, abrir o terminal, e com o `yarn`, digitar `yarn dev`. Este por padrão rodará no `localhost:8080`, mas caso não seja possível, será exibido no terminal a porta alternativa que estará rodando. Basta abrir o navegador na porta exibida e alí estará rodando o projeto.
+Basta clonar o repositório, abrir o terminal, e com o `yarn`, digitar `yarn dev` ou `yarn webpack-dev-server --mode=development`. Este por padrão rodará no `localhost:8080`, mas caso não seja possível, será exibido no terminal a porta alternativa que estará rodando. Basta abrir o navegador no `localhost` e na porta exibida e alí estará rodando o projeto.
 
 <br>
-
 
 ## Organização de pastas e arquivos:
 ___
