@@ -41,9 +41,8 @@ body {
 
 #menu {
   width: 100%;
-  height: auto;
   display: inline-flex;
-  padding: 2%;
+  margin: 2%;
 }
 
 .mainnav {
@@ -96,9 +95,9 @@ body {
   letter-spacing: 4px;
   text-shadow: 2px 3px 3px #000;
   line-height: 4.5em;
-  width: 50%;
-  padding: 0 25%;
-  padding-top: 15%;
+  width: 100%;
+  position: absolute;
+  top: 40%;
 }
 
 #maintext h2 {
@@ -113,14 +112,17 @@ body {
   width: 50%;
   padding: 0 25%;
   text-align: center;
-  margin-top: 20%;
+  position: absolute;
+  bottom: 2%;
 }
 
 #social img {
   border-radius: 25%;
   color: rgba(0, 0, 0, 0.50);
-  height: 5%;
-  width: 5%;
+  max-height: 6%;
+  max-width: 6%;
+  min-height: 50px;
+  min-width: 50px;
   padding: 0 0.7%;
   opacity: 0.5;
   filter: invert(99%) sepia(3%) saturate(111%) hue-rotate(254deg) brightness(112%) contrast(87%);  
@@ -128,22 +130,16 @@ body {
 }
 
 #facebook:hover {
-  height: 6%;
-  width: 6%;
   filter: invert(41%) sepia(4%) saturate(7048%) hue-rotate(182deg) brightness(94%) contrast(92%);
   opacity: 1;
 }
 
 #linkedin:hover {
-  height: 6%;
-  width: 6%;
   filter: invert(30%) sepia(45%) saturate(2017%) hue-rotate(173deg) brightness(101%) contrast(102%);
   opacity: 1;
 }
 
 #github:hover {
-  height: 6%;
-  width: 6%;
   opacity: 1;
 }
 
