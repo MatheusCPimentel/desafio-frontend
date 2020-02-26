@@ -207,9 +207,13 @@ inputEle.addEventListener('keyup', function (e) {
     clearTimeout(timeout);
 
     timeout = setTimeout(function () {
+
+      if (inputEle.value !== '') {
         gitProfile(inputEle.value);
         gitRepo(inputEle.value);
         gitStarred(inputEle.value);
+      }
+      
     }, 1000);
 });
 
