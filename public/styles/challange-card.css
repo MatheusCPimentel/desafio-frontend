@@ -12,7 +12,7 @@
 
 #inputGit {
   width: 800px;
-  max-width: 90%;
+  max-width: 85%;
   border: 3px solid #eee;
   border-radius: 15px;
   outline: none;
@@ -89,7 +89,10 @@
 }
 
 .left img {
-  height: 17vh;
+  height: 80%;
+  width: 80%;
+  max-width: 200px;
+  max-height: 200px;
   border-radius: 50%;
   opacity: 100%;
   border: 3px solid rgb(6, 50, 23);

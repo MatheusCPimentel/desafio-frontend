@@ -1,8 +1,23 @@
 /* Dispositivos menores: */
 
 @media only screen and (max-width: 485px) {
+
+  #social img {
+    min-height: 35px;
+    min-width: 35px;
+  }
+  
   .mainnav {
-    display: none;
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 10%;
+    font-size: 0.8em;
+  }
+
+  .mainnav a {
+    margin-left: 65%;
+    width: 20%;
+    border-radius: 30px !important;
   }
 
   #maintext {
@@ -20,13 +35,63 @@
   #gitDiv img {
     display: none;
   }
+
+  .right {
+    padding-left: 20px;
+  }
+
+  .left a, #liRepo {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+  }
+
+  .btn input {
+    width: 90%;
+    margin: 2px 0 !important;
+  }
+
+  #profile h1 {
+    font-size: 1.6em;
+  }
+
+  footer {
+    font-size: 0.6em;
+  }
+}
+
+@media only screen and (min-width: 487px) and (max-width: 590px) {
+  .btn {
+    font-size: 0.65em !important;
+  }
 }
 
 /* Dispositivos pequenos: */
 
-@media only screen and (min-width: 486px) and (max-width: 630px) {
+@media only screen and (min-width: 486px) and (max-width: 660px) {
+
+  #social img {
+    min-height: 40px;
+    min-width: 40px;
+  }
+
   .mainnav {
-    display: none;
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 10%;
+  }
+
+  .mainnav a {
+    text-align: center;
+    margin-left: 65%;
+    width: 20%;
+    border-radius: 30px !important;
   }
 
   #maintext {
@@ -40,11 +105,31 @@
   #maintext h2 {
     font-size: 1em !important;
   }
+
+  .btn {
+    font-size: 0.8em;
+  }
+
+  .right {
+    padding-left: 20px;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+
+  #liRepo {
+    font-size: 1em;
+  }
+
+  #profile h1 {
+    font-size: 1.7em;
+  }
 }
 
 /* Dispositivos médios: */
 
-@media only screen and (min-width: 631px) and (max-width: 740px) {
+@media only screen and (min-width: 661px) and (max-width: 740px) {
   #maintext {
     line-height: 3.5em;
   }
@@ -55,6 +140,10 @@
 
   #maintext h2 {
     font-size: 1.5em !important;
+  }
+
+  footer {
+    font-size: 0.9em;
   }
 }
 
