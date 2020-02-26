@@ -3,12 +3,6 @@
 #gitDiv {
   text-align: center;
 }
-#gitDiv img {
-  width: 28px;
-  margin-left: -45px;
-  margin-bottom: -8px;
-  cursor: pointer;
-}
 
 #inputGit {
   width: 800px;
@@ -235,4 +229,30 @@
 
 #starred ul li:nth-child(even) {
   background-color: #fff;
+}
+
+/* Not Found: */
+
+#notfound {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+
+#notfound img {
+  margin: 0 20px;
+  height: 80%;
+  width: 80%;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  opacity: 100%;
+  border: 3px solid rgb(6, 50, 23);
+  box-shadow: 0 0 5px #222;
+}
+
+#notfound h1 {
+  margin: 0 20px;
 }

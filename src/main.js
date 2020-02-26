@@ -94,14 +94,10 @@ function renderGitCard(data) {
 
     const resHtml = 
 
-    ` <div class="container-gitRepo">
-          <div class="left">
-                <img src="./images/usernotfound.jpg"> 
-              </a>
-          </div>
-          <div class="right">
-            <h1>Usuário não encontrado!</h1>
-          </div>`
+    ` <div id="notfound">
+        <img src="./images/usernotfound.jpg" id="notfound"> 
+        <h1>Usuário não encontrado!</h1>
+      </div>`
 
     divProfile.innerHTML = resHtml;
 
@@ -200,31 +196,21 @@ window.showStarred = function() {
 
 // --------------------------------*--------------------------------
 
-
 // Procurar por perfil no GitHub:
 
-// Pressionando enter:
-
 const inputEle = document.getElementById('inputGit');
-inputEle.addEventListener('keyup', function(e){
-  var key = e.which || e.keyCode;
-  if (key == 13) { 
-    gitProfile(this.value);
-    gitRepo(this.value);
-    gitStarred(this.value);
-  }
+
+let timeout = null;
+
+inputEle.addEventListener('keyup', function (e) {
+    clearTimeout(timeout);
+
+    timeout = setTimeout(function () {
+        gitProfile(inputEle.value);
+        gitRepo(inputEle.value);
+        gitStarred(inputEle.value);
+    }, 1000);
 });
-
-
-// Clicando na imagem "search":
-
-const search = document.getElementById('search');
-search.onclick = function() {
-  gitProfile(inputEle.value);
-  gitRepo(inputEle.value);
-  gitStarred(inputEle.value);
-};
-
 
 // --------------------------------*--------------------------------
 

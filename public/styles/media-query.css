@@ -32,10 +32,6 @@
     font-size: 0.8em !important;
   }
 
-  #gitDiv img {
-    display: none;
-  }
-
   .right {
     padding-left: 20px;
   }
@@ -57,12 +53,27 @@
     margin: 2px 0 !important;
   }
 
+  #profile {
+    padding: 20px 0;
+  }
+
   #profile h1 {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 
   footer {
     font-size: 0.6em;
+  }
+
+  #notfound {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #notfound h1 {
+    margin-top: 10px;
+    width: 100%;
+    margin: 0;
   }
 }
 
