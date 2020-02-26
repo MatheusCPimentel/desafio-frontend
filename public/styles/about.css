@@ -1,13 +1,3 @@
-/* Sobre: */
-
-#arrowabout {
-  height: 60px;
-  width: 60px;
-  margin: 20px;
-  position: absolute;
-  top: 870px;
-}
-
 #sobre {
   width: 100%;
   min-height: 90vh;
@@ -30,20 +20,4 @@
   word-spacing: 4px;
   margin: 0 auto;
   margin-bottom: 25px;
-}
-
-
-/* Footer: */
-
-footer {
-  background-color: rgb(48, 48, 48);
-  padding: 2% 0;
-}
-
-footer p {
-  text-align: center;
-  color: #eee;
-  font-size: 1.2em;
-  letter-spacing: 1.5px;
-  vertical-align: middle;
 }

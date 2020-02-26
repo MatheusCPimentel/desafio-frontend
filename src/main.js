@@ -12,7 +12,7 @@ async function gitProfile (githubName) {
 }
 
 
-// Repositório:
+// Repositóriow:
 
 async function gitRepo (githubName) {
   try {
@@ -196,7 +196,8 @@ window.showStarred = function() {
 
 // --------------------------------*--------------------------------
 
-// Procurar por perfil no GitHub:
+
+// Chamar as funções de requisição a API 1s após o término da digitação do usuário:
 
 const inputEle = document.getElementById('inputGit');
 
